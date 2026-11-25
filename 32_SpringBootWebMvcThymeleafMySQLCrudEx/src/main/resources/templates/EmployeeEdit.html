@@ -1,0 +1,23 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<title>CrudOperation</title>
+	</head>
+	<body>
+		<h2>Employee UPDATE Page</h2>
+		<form th:action="@{/employee/update}" method="post" th:object="${employee}">
+			<pre>
+				ID 	:<input type="text" th:field="*{empId}" readonly="true"/> 
+				NAME	:<input type="text" th:field="*{empName}" />
+				SALARY	:<input type="text" th:field="*{empSal}" />
+				DEPT	:
+					<select name="empDept">
+						<option value="DE"> DE</option>
+						<option value="QA"> QA</option>
+						<option value="BA"> BA</option>
+					</select>
+				<button type="submit">UPDATE</button>
+			</pre>
+		</form>
+		
+	</body>
+</html>

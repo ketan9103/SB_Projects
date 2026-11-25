@@ -1,0 +1,15 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<link>
+		<title>First App</title>
+		<link rel="stylesheet" th:href="@{/mycss/design.css}"></link>
+		<script type="text/javascript" th:src="@{/myJs/setUp.js}"></script>
+	</head>
+	<body>
+		<h1>WELCOME TO THEYMLEAF EXAMPLE</h1>
+		
+		<img th:src="@{/images/doctor.png}" width="100" height="150"/>
+		
+		<p class="mydesign">[[${prodCode}]]</p>
+		<p th:text="${prodCode}"></p>
+	</body>
+</html>

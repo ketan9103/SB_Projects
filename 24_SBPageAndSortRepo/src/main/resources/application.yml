@@ -1,0 +1,11 @@
+Spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot7am
+    username: root
+    password: ketan
+  jpa:
+    show_sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate: 
+      ddl-auto: create  

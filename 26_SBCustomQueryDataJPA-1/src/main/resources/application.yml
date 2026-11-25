@@ -1,0 +1,9 @@
+Spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/boot7am
+    username: root
+    password: ketan
+  jpa: 
+    show_sql: true
+    hibernate:
+      ddl-auto: create
